@@ -1,0 +1,18 @@
+# 构建中间产物
+build/
+
+# 构建产物（想发布 APK 时再取消注释）
+# DSH.apk
+# DSH.apk.idsig
+
+# 调试密钥：每台机器自己生成（build.ps1 会自动生成）
+debug.keystore
+
+# 工具链（JDK / SDK，几个 GB）
+../toolchain/
+
+*.log
+
+# 开机动画素材：属于 dsh-opening-splash 插件，由使用者自行放入
+# （见 THIRD-PARTY-NOTICES.md）
+app/src/main/assets/splash.html

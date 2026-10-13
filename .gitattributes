@@ -1,0 +1,10 @@
+# 仓库内容以 Unix 换行保存。这些源码要在 Windows 构建、在 Linux/Termux 上阅读，
+# CRLF 会让 shell 脚本与 patch 在另一侧失效。
+* text=auto eol=lf
+*.ps1 text eol=lf
+*.mjs text eol=lf
+*.java text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.png binary

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  只对回环地址放行明文 HTTP。
+
+  DSH 的 web 服务只监听 127.0.0.1，所以这个壳也只需要跟本机说话。
+  其余任何域名一律走系统的默认策略（Android 9+ 默认禁止明文），
+  这样即使将来壳里被塞进外部链接，也不会悄悄降级成明文。
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">::1</domain>
+    </domain-config>
+</network-security-config>

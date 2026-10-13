@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  深色无标题栏主题，和 DSH 自己的配色（#0b0b0d）对齐。
+
+  用系统自带的 Theme.Material.NoActionBar 而不是 AndroidX 的 Material 主题：
+  这样构建时不需要解析任何依赖，aapt2 + d8 直接就能打包。
+
+  windowLayoutInDisplayCutoutMode=shortEdges 让内容延伸到刘海/挖孔下面，
+  配合 WebView 里的 viewport-fit=cover，界面才会真正顶满整块屏幕。
+-->
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0b0b0d</item>
+        <item name="android:colorBackground">#0b0b0d</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>
