@@ -346,5 +346,10 @@ dsh-android-shell/
 
 ## 许可
 
-MIT。第三方素材见 `THIRD-PARTY-NOTICES.md`。
+**代码与文档：MIT。**
+
+**启动图标除外** —— `app/src/main/res/mipmap-*/ic_launcher.png` 是第三方插画
+（同人图），来源不明，**不在 MIT 授权范围内**，仓库作者无权对其授权。
+详见 `THIRD-PARTY-NOTICES.md`；想完全干净的话，把这五个 PNG 换成你自己的图即可。
+
 本项目与 DeepSeek 官方没有关系。

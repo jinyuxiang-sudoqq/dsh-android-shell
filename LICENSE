@@ -2,6 +2,10 @@ MIT License
 
 Copyright (c) 2026 jinyuxiang
 
+Scope: this license covers the source code and documentation in this repository.
+It does NOT cover the launcher icons under app/src/main/res/mipmap-*/, which are
+third-party artwork with unknown provenance -- see THIRD-PARTY-NOTICES.md.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
